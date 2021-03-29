@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
     fs::path saveCrop = outPath;
     string cropName = name + "_1_crop" + extension;
     saveCrop /= cropName;
-    imwrite(saveCrop.u8string(), imageCropped);
+   //  imwrite(saveCrop.u8string(), imageCropped);
     // END Step 1 //
 
 
@@ -57,8 +57,8 @@ int main(int argc, char *argv[]) {
     string smoothedName = name + "_2_smoothed" + extension;
     saveBinary /= binaryName;
     saveSmoothed /= smoothedName;
-    imwrite(saveBinary.u8string(), imageBinary);
-    imwrite(saveSmoothed.u8string(), imageSmoothed);
+   //  imwrite(saveBinary.u8string(), imageBinary);
+   //  imwrite(saveSmoothed.u8string(), imageSmoothed);
     // END Step 2 //
 
 
@@ -71,7 +71,7 @@ int main(int argc, char *argv[]) {
     fs::path saveLines = outPath;
     string linesName = name + "_3_lines" + extension;
     saveLines /= linesName;
-    imwrite(saveLines.u8string(), imageSmoothedLines);
+   //  imwrite(saveLines.u8string(), imageSmoothedLines);
     fs::create_directories(linesPath);
     for (int i=0; i<lines.size(); i++) {
         string lineIndex = to_string((i+1)*1e-6).substr(5);
