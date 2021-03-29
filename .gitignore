@@ -1,6 +1,5 @@
-dataset_hdf5
+imgproc.out
 __pycache__
 .ipynb_checkpoints
 .venv
 .vscode
-output

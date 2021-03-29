@@ -6,7 +6,7 @@ from glob import glob
 raw_path = os.path.join("..", "data", "raw")
 source_path = os.path.join("..", "data", "dataset_hdf5", "dataset.hdf5")
 output_path = os.path.join("..", "output")
-target_path = os.path.join(output_path, "checkpoint_weights_bentham_mixed.hdf5")
+target_path = os.path.join(output_path, "checkpoint_weights_bad_valid.hdf5")
 json_file = os.path.join(output_path, "initial_params.json")
 ensemble_checkpoint_weights = sorted(glob(os.path.join(output_path, "*.hdf5")))
 
