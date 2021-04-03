@@ -24,4 +24,4 @@ def index():
                 "text": text}, 202
     except:
         os.system(f"rm -r api/temp/{current_uuid}*")
-        return {"status": "Maar li gyi h"}, 405
+        return {"status": "error"}
